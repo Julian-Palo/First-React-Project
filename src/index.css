@@ -1,4 +1,5 @@
 /* Default code from App.css React file*/
+
 .hero {
   position: relative;
 
@@ -85,3 +86,51 @@
 }
 
 /* My CSS */
+
+/* form styling */
+
+.searchColor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.searchColor label {
+  position: absolute;
+  left: -99999px;
+}
+
+.searchColor input[type="text"] {
+  max-width: 50rem;
+  min-height: 2rem;
+  font-size: 1.3rem;
+  border-radius: 0.4rem;
+  padding: 0 5px 0 5px;
+  box-shadow: 2px 2px 3px rgb(58, 58, 58);
+}
+
+.colorBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*
+  When a block element is given
+   a max-width, it stays pinned to
+    the left edge of its parent.
+    
+    text-align: center on #root only centers text and
+      inline content, not block boxes.
+       The fix is margin: 1rem auto:
+        the auto left and right margins
+         split the leftover space evenly,
+          which centers the box.
+  */
+  margin: 1rem auto;
+  max-width: 10.5rem;
+  min-height: 10.5rem;
+  font-size: 1.5rem;
+  border-radius: 0.4rem;
+  padding: 3rem;
+  outline: auto;
+  box-shadow: 3px 3px 3px;
+}
